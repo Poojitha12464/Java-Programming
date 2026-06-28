@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class BearAndBigBrother {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int bearWeight = scanner.nextInt();
+        int brotherWeight = scanner.nextInt();
+        
+        int years = 0;
+        while (bearWeight <= brotherWeight) {
+            bearWeight *= 3;
+            brotherWeight *= 2;
+            years++;
+        }
+        
+        System.out.println(years);
+    }
+}
