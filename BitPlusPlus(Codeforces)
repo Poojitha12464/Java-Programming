@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class BitPlusPlus {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt(); // Number of operations
+        int x = 0; // Initial value of x
+        for (int i = 0; i < n; i++) {
+            String operation = scanner.next(); // Read the operation
+            if (operation.equals("++X") || operation.equals("X++")) {
+                x++; // Increment x for both ++X and X++
+            } else if (operation.equals("--X") || operation.equals("X--")) {
+                x--; // Decrement x for both --X and X--
+            }
+        }
+        System.out.println(x); // Output the final value of x
+    }
+}
