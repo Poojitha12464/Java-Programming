@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class BoyOrGirl {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String username = scanner.nextLine();
+        
+        // Use a set to store unique characters
+        java.util.Set<Character> uniqueChars = new java.util.HashSet<>();
+        
+        // Add each character of the username to the set
+        for (char c : username.toCharArray()) {
+            uniqueChars.add(c);
+        }
+        
+        // Determine if the number of unique characters is even or odd
+        if (uniqueChars.size() % 2 == 0) {
+            System.out.println("CHAT WITH HER!");
+        } else {
+            System.out.println("IGNORE HIM!");
+        }
+    }
+}
