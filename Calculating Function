@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class CalculatingFunction {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long n = scanner.nextLong();
+        long k = n / 2;
+        long result;
+        if (n % 2 == 0) {
+            result = k;
+        } else {
+            result = -k - 1;
+        }
+
+        System.out.println(result);
+    }
+}
